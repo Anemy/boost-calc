@@ -1,6 +1,6 @@
 <html>
   <head>
-    <script src="jquery.slim.min.js"></script>
+    <script src="jquery.min.js"></script>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -9,22 +9,29 @@
         <h1 class="bc-title">
           Boost Calculator 
         </h1>
-        <form action="">
+
+        <!-- Here change the action to the page you want to go to. This will make a request to that webpage with the arguments they've supplied. -->
+        <form action="/checkout" method="get">
           <h2 class="bc-subtitle">Current SR</h2>
-          <input name="current_elo" min="0" max="4500" class="bc-input  bc-input-sr" type="number" step="50" placeholder="Type your current SR">
+          <input name="current_sr" min="0" max="4500" class="bc-input  bc-input-sr  bc-js-current-sr" type="number" placeholder="Current SR (0-4500)">
           <h2 class="bc-subtitle">Desired SR</h2>
-          <input name="desired_elo" min="0" max="4500" class="bc-input  bc-input-sr" type="number" step="50" placeholder="Type your desired SR">
+          <input name="desired_sr" min="0" max="4500" class="bc-input  bc-input-sr  bc-js-desired-sr" type="number" placeholder="Desired SR (0-4500)">
 
           <h3 class="bc-subtitle">Additional Options</h3>
           <div class="bc-row">
-            <input name="play_specific_champions" class="bc-input  bc-input-checkbox" type="checkbox">
+            <input name="play_specific_champions" class="bc-input  bc-input-checkbox  bc-js-specific-champs" type="checkbox">
             <span class="bc-descriptor">
               Play specific champions
             </span>
           </div>
-          <!-- Here change the href to the page you want to go to. This will make a request to that webpage with the arguments they've supplied above. -->
-          <div class="bc-row  bc-center">
-            <a class="bc-checkout-button" href="/to-checkout-page">Checkout</a>
+
+          <div class="bc-total-price">
+            Total price: $<span class="bc-js-price  bc-price-number">0</span>
+          </div>
+
+          
+          <div class="bc-row  bc-center  bc-checkout-button-container">
+            <button class="bc-checkout-button">Checkout</button>
           </div>
         </form>
         <script src="calculator.js"></script>
