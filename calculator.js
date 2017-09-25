@@ -37,5 +37,5 @@ $(document).ready(function() {
   // Listen to the user checking the checkbox.
   $('.bc-js-specific-champs').change(function() {
     calculatePrice();
-  })
-})
+  });
+});
