@@ -1,0 +1,108 @@
+/* RESET CSS */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+.boost-calculator-container {
+  text-align: center;
+  margin: 3em;
+}
+
+.boost-calculator {
+  text-align: left;
+  margin: auto;
+
+  /* Font styling. */
+  font-family: 'Heebo', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+
+  /* The size of the window. */
+  padding: 100px;
+
+  /* The size of the box. */
+  width: 600px;
+  height: 400px;
+}
+
+.bc-title {
+  text-align: center;
+
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.bc-subtitle {
+  font-size: 18px;
+  font-weight: 300;
+
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.bc-descriptor {
+  margin-left: 2px;
+}
+
+.bc-input-title:first-child {
+  margin-top: 6px;
+}
+
+.bc-input {
+  margin-top: 4px;
+  margin-bottom: 0;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  padding: 4px;
+}
+
+.bc-input-sr {
+  width: 100%;
+}
+
+.bc-input-checkbox {
+  margin-right: 0;
+}
+
+.bc-checkout-button {
+  padding: 6px;
+
+  border: 1px solid #333;
+  border-radius: 4px;
+
+  height: 20px;
+  width: 40px;
+
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+
+  outline: none;
+
+  -webkit-animation-name: goldPulse;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.bc-row {
+  width: 100%;
+}
+
+.bc-center {
+  text-align: center;
+}
+
+.bc-checkout-button:hover {
+  cursor: pointer;
+
+  border: 1px solid #000;
+}
+
+@-webkit-keyframes goldPulse {
+  from { background-color: #FBF03D; -webkit-box-shadow: 0 0 9px #eee; }
+  50% { background-color: #FBF03D; -webkit-box-shadow: 0 0 18px #FBF03D; }
+  to { background-color: #FBF03D;; -webkit-box-shadow: 0 0 9px #eee; }
+}
